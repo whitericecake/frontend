@@ -2,6 +2,8 @@
 
 import { Avatar, User } from "@nextui-org/react";
 import Image from "next/image";
+import pwa from "@/public/profile.png";
+import CenteredImage from "@/components/CenteredImage";
 
 const CreatePage = () => {
   return (
@@ -9,10 +11,7 @@ const CreatePage = () => {
       {/* 왼쪽 2/10 비율의 컨테이너 */}
       <div className="row-span-4 grid grid-cols-10">
         <div className="col-span-3 flex flex-col justify-center items-center text-center">
-          <Avatar
-            src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-            className="w-30 h-30 text-large mb-4"
-          />
+          <CenteredImage src={pwa} width={180} height={180} alt="profile" />
           <h1 className="text-2xl font-bold mb-2">김도원</h1>
           <h2 className="text-gray-600 text-3xl font-bold">프론트엔드</h2>
         </div>
@@ -86,80 +85,56 @@ const CreatePage = () => {
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
               <div
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-                  className="w-20 h-20 text-large mb-4"
-                />
+                <CenteredImage src={pwa} width={100} height={100} alt="stack" />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
               </div>
             </div>
