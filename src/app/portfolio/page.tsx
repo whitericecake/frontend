@@ -2,59 +2,289 @@
 
 import { Avatar, User } from "@nextui-org/react";
 import Image from "next/image";
+import profile from "@/public/profile.png";
+import nextjs from "@/public/next.svg";
+import axios from "@/public/axios.png";
+import react from "@/public/react.png";
+import reactquery from "@/public/reactquery2.png";
+import ts from "@/public/tsx.png";
+import redux from "@/public/redux.png";
+import nodejs from "@/public/NODEJS.png";
+import socketio from "@/public/socketio.png";
+import hh99 from "@/public/hh99.png";
+import multicam from "@/public/MULTICAMPUS.png";
+import igw from "@/public/igw.png";
+import CenteredImage from "@/components/CenteredImage";
 
 const CreatePage = () => {
   return (
-    <div className="h-screen grid grid-cols-10 p-24 bg-white shadow-md text-gray-800">
-      {/* 왼쪽 2:8 비율의 컨테이너 */}
-      <div className="grid grid-rows-10 col-span-2 space-y-4">
-        <div className="row-span-3 flex flex-col justify-center items-center text-center">
-          <Avatar
-            src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-            className="w-30 h-30 text-large mb-4"
+    <div className="h-full bg-white shadow-md text-gray-800">
+      {/* 왼쪽 2/10 비율의 컨테이너 */}
+      <div className="row-span-4 grid grid-cols-10">
+        <div className="col-span-3 flex flex-col justify-center items-center text-center">
+          <CenteredImage
+            src={profile}
+            width={180}
+            height={180}
+            borderRadius={50}
+            alt="profile"
           />
           <h1 className="text-2xl font-bold mb-2">김도원</h1>
-          <p className="text-gray-600">프론트엔드</p>
+          <h2 className="text-gray-600 text-3xl font-bold">프론트엔드</h2>
         </div>
 
-        <div className="row-span-3">
-          <h2 className="text-xl font-bold border-b-4 pb-2">Tech Stack</h2>
-          {/* 기술 스택 내용 */}
-        </div>
-
-        <div className="row-span-1">
-          <h2 className="text-xl font-bold border-b-4 pb-2">학력</h2>
-          {/* 학력 내용 */}
-        </div>
-
-        <div className="row-span-3">
-          <h2 className="text-xl font-bold border-b-4 pb-2">개발 경력</h2>
-          {/* 개발 경력 내용 */}
-        </div>
-      </div>
-      <div className="col-span-1"></div>
-
-      {/* 오른쪽 8:10 비율의 컨텐츠 영역 */}
-      <div className="col-span-7 pl-8 grid grid-rows-10">
-        {/* 이메일 등의 정보 영역 - 4:10 비율 */}
-        <div className="row-span-2">
-          <ul className=" space-y-2 text-sm">
-            <li>Email | sniperead@naver.com</li>
-            <li>KAKAO | laufetv@gmail.com</li>
+        <div className="col-span-7 mr-16">
+          <ul
+            style={{ listStyleType: "disc", paddingLeft: "20px" }}
+            className="space-y-2 text-sm font-bold border-b-4 border-t-4 pb-2 m-10"
+          >
+            <li>
+              Email |{" "}
+              <a href="mailto:sniperead@naver.com">sniperead@naver.com</a>
+            </li>
+            <li>
+              KAKAO | <a href="mailto:laufetv@gmail.com">laufetv@gmail.com</a>
+            </li>
             <li>PHONE | 010-2623-0279</li>
-            <li>Github | https://github.com/TheON2</li>
-            <li>Blog | https://velog.io/@theon2</li>
+            <li>
+              Github |{" "}
+              <a
+                href="https://github.com/TheON2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/TheON2
+              </a>
+            </li>
+            <li>
+              Blog |{" "}
+              <a
+                href="https://velog.io/@theon2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://velog.io/@theon2
+              </a>
+            </li>
+          </ul>
+          <ul
+            style={{ listStyleType: "disc", paddingLeft: "20px" }}
+            className="space-y-2 text-sm font-bold border-b-4 pb-2 m-10"
+          >
+            <li>
+              꾸준히 학습하고 발전하는 것에 관심이 많은 주니어개발자 김도원
+              입니다.
+            </li>
+            <li>
+              NextJs 13과 TypeScript를 주력 기술로 활용하며, NodeJs 개발을 함께
+              공부하여 다양한 관점을 고려합니다.
+            </li>
+            <li>
+              꾸준한 깃허브 커밋과 블로그 작성을 통해 매일 새로운 것에 도전하고
+              기록합니다.
+            </li>
+            <li>
+              일어나면 가장 먼저 TIL 하루일과 작성과 개발커뮤니티 열람으로
+              하루를 시작합니다.
+            </li>
           </ul>
         </div>
+      </div>
 
-        {/* 여기에 3:10 비율의 컨텐츠를 추가 */}
-        <div className="row-span-3">{/* 내용을 여기에 추가해주세요 */}</div>
+      <div style={{ height: "300px" }}>
+        <div className="grid grid-cols-10">
+          <div className="col-span-3">
+            <h2 className="text-xl text-center font-bold pb-2 ml-10">
+              Tech Stack
+            </h2>
+          </div>
+          <div className="col-span-7 ml-16 mr-16">
+            <div className="grid grid-cols-4 gap-4">
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={nextjs}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={react}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">ReactJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={ts}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">TypeScript</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={nodejs}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NodeJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={reactquery}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">ReactQuery</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={redux}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">Redux</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={socketio}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">Socket.io</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <CenteredImage
+                  src={axios}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">axios</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        {/* 여기에 1:10 비율의 컨텐츠를 추가 */}
-        <div className="row-span-1">{/* 내용을 여기에 추가해주세요 */}</div>
+      <div style={{ height: "150px", marginTop: "20px" }}>
+        <div className="grid grid-cols-10">
+          <div className="col-span-3">
+            <h2 className="text-xl text-center font-bold pb-2 ml-10">학력</h2>
+          </div>
+          <div className="col-span-7 ml-12">
+            <h2 className="text-gray-600 text-3xl font-bold">방송통신대학교</h2>
+            <h1 className="text-2xl font-bold mb-2">3학년 재학중</h1>
+            <p>2023-03 ~ </p>
+          </div>
+        </div>
+      </div>
 
-        {/* 여기에 2:10 비율의 컨텐츠를 추가 */}
-        <div className="row-span-2">{/* 내용을 여기에 추가해주세요 */}</div>
+      <div style={{ height: "250px" }}>
+        <div className="grid grid-cols-10">
+          <div className="col-span-3">
+            <h2 className="text-xl text-center font-bold pb-2 ml-10">
+              개발 경력
+            </h2>
+          </div>
+          <div className="col-span-7 ml-16 mr-16">
+            <div className="grid grid-cols-4 gap-4">
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "130px", height: "180px" }}
+              >
+                <CenteredImage
+                  src={hh99}
+                  width={100}
+                  height={100}
+                  borderRadius={0}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">
+                  항해99 15기 FE
+                </h2>
+                <h2 className=" text-sm font-bold">NextJs React TypeScript</h2>
+                <p className=" text-sm">2023.05.22~2023.09.15</p>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "130px", height: "180px" }}
+              >
+                <CenteredImage
+                  src={multicam}
+                  width={100}
+                  height={100}
+                  borderRadius={0}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">
+                  삼성 멀티캠퍼스
+                </h2>
+                <h2 className=" text-sm font-bold">JAVA JSP</h2>
+                <p className=" text-sm">2021.10.14~2022.03.04</p>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "130px", height: "180px" }}
+              >
+                <CenteredImage
+                  src={igw}
+                  width={100}
+                  height={100}
+                  alt="stack"
+                  borderRadius={0}
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">
+                  광주인력개발원
+                </h2>
+                <h2 className=" text-sm font-bold">C CPP C#</h2>
+                <p className=" text-sm">2020.02.24~2020.10.21</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
