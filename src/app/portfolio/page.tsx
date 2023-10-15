@@ -75,16 +75,99 @@ const CreatePage = () => {
         </div>
       </div>
 
-      <div style={{ minHeight: "250px" }}>
+      <div style={{ height: "300px" }}>
         <div className="grid grid-cols-10">
           <div className="col-span-3">
             <h2 className="text-xl font-bold pb-2 ml-10">Tech Stack</h2>
           </div>
-          <div className="col-span-7"></div>
+          <div className="col-span-7 ml-16 mr-16">
+            <div className="grid grid-cols-4 gap-4">
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "100px", height: "130px" }}
+              >
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+                  className="w-20 h-20 text-large mb-4"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div style={{ minHeight: "150px" }}>
+      <div style={{ height: "150px" }}>
         <div className="grid grid-cols-10">
           <div className="col-span-3">
             <h2 className="text-xl font-bold pb-2 ml-10">학력</h2>
@@ -93,7 +176,7 @@ const CreatePage = () => {
         </div>
       </div>
 
-      <div>
+      <div style={{ height: "250px" }}>
         <div className="grid grid-cols-10">
           <div className="col-span-3">
             <h2 className="text-xl font-bold pb-2 ml-10">개발 경력</h2>
