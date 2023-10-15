@@ -11,6 +11,9 @@ import ts from "@/public/tsx.png";
 import redux from "@/public/redux.png";
 import nodejs from "@/public/NODEJS.png";
 import socketio from "@/public/socketio.png";
+import hh99 from "@/public/hh99.png";
+import multicam from "@/public/MULTICAMPUS.png";
+import igw from "@/public/igw.png";
 import CenteredImage from "@/components/CenteredImage";
 
 const CreatePage = () => {
@@ -19,7 +22,13 @@ const CreatePage = () => {
       {/* 왼쪽 2/10 비율의 컨테이너 */}
       <div className="row-span-4 grid grid-cols-10">
         <div className="col-span-3 flex flex-col justify-center items-center text-center">
-          <CenteredImage src={profile} width={180} height={180} alt="profile" />
+          <CenteredImage
+            src={profile}
+            width={180}
+            height={180}
+            borderRadius={50}
+            alt="profile"
+          />
           <h1 className="text-2xl font-bold mb-2">김도원</h1>
           <h2 className="text-gray-600 text-3xl font-bold">프론트엔드</h2>
         </div>
@@ -85,7 +94,9 @@ const CreatePage = () => {
       <div style={{ height: "300px" }}>
         <div className="grid grid-cols-10">
           <div className="col-span-3">
-            <h2 className="text-xl font-bold pb-2 ml-10">Tech Stack</h2>
+            <h2 className="text-xl text-center font-bold pb-2 ml-10">
+              Tech Stack
+            </h2>
           </div>
           <div className="col-span-7 ml-16 mr-16">
             <div className="grid grid-cols-4 gap-4">
@@ -97,6 +108,7 @@ const CreatePage = () => {
                   src={nextjs}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">NextJS</h2>
@@ -109,6 +121,7 @@ const CreatePage = () => {
                   src={react}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">ReactJS</h2>
@@ -117,7 +130,13 @@ const CreatePage = () => {
                 className="flex flex-col justify-center items-center text-center"
                 style={{ width: "100px", height: "130px" }}
               >
-                <CenteredImage src={ts} width={100} height={100} alt="stack" />
+                <CenteredImage
+                  src={ts}
+                  width={100}
+                  height={100}
+                  borderRadius={50}
+                  alt="stack"
+                />
                 <h2 className="text-gray-600 text-1xl font-bold">TypeScript</h2>
               </div>
               <div
@@ -128,6 +147,7 @@ const CreatePage = () => {
                   src={nodejs}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">NodeJS</h2>
@@ -140,6 +160,7 @@ const CreatePage = () => {
                   src={reactquery}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">ReactQuery</h2>
@@ -152,6 +173,7 @@ const CreatePage = () => {
                   src={redux}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">Redux</h2>
@@ -164,6 +186,7 @@ const CreatePage = () => {
                   src={socketio}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">Socket.io</h2>
@@ -176,6 +199,7 @@ const CreatePage = () => {
                   src={axios}
                   width={100}
                   height={100}
+                  borderRadius={50}
                   alt="stack"
                 />
                 <h2 className="text-gray-600 text-1xl font-bold">axios</h2>
@@ -185,21 +209,81 @@ const CreatePage = () => {
         </div>
       </div>
 
-      <div style={{ height: "150px" }}>
+      <div style={{ height: "150px", marginTop: "20px" }}>
         <div className="grid grid-cols-10">
           <div className="col-span-3">
-            <h2 className="text-xl font-bold pb-2 ml-10">학력</h2>
+            <h2 className="text-xl text-center font-bold pb-2 ml-10">학력</h2>
           </div>
-          <div className="col-span-7"></div>
+          <div className="col-span-7 ml-12">
+            <h2 className="text-gray-600 text-3xl font-bold">방송통신대학교</h2>
+            <h1 className="text-2xl font-bold mb-2">3학년 재학중</h1>
+            <p>2023-03 ~ </p>
+          </div>
         </div>
       </div>
 
       <div style={{ height: "250px" }}>
         <div className="grid grid-cols-10">
           <div className="col-span-3">
-            <h2 className="text-xl font-bold pb-2 ml-10">개발 경력</h2>
+            <h2 className="text-xl text-center font-bold pb-2 ml-10">
+              개발 경력
+            </h2>
           </div>
-          <div className="col-span-7"></div>
+          <div className="col-span-7 ml-16 mr-16">
+            <div className="grid grid-cols-4 gap-4">
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "130px", height: "180px" }}
+              >
+                <CenteredImage
+                  src={hh99}
+                  width={100}
+                  height={100}
+                  borderRadius={0}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">
+                  항해99 15기 FE
+                </h2>
+                <h2 className=" text-sm font-bold">NextJs React TypeScript</h2>
+                <p className=" text-sm">2023.05.22~2023.09.15</p>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "130px", height: "180px" }}
+              >
+                <CenteredImage
+                  src={multicam}
+                  width={100}
+                  height={100}
+                  borderRadius={0}
+                  alt="stack"
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">
+                  삼성 멀티캠퍼스
+                </h2>
+                <h2 className=" text-sm font-bold">JAVA JSP</h2>
+                <p className=" text-sm">2021.10.14~2022.03.04</p>
+              </div>
+              <div
+                className="flex flex-col justify-center items-center text-center"
+                style={{ width: "130px", height: "180px" }}
+              >
+                <CenteredImage
+                  src={igw}
+                  width={100}
+                  height={100}
+                  alt="stack"
+                  borderRadius={0}
+                />
+                <h2 className="text-gray-600 text-1xl font-bold">
+                  광주인력개발원
+                </h2>
+                <h2 className=" text-sm font-bold">C CPP C#</h2>
+                <p className=" text-sm">2020.02.24~2020.10.21</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
