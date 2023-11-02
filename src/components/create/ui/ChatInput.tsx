@@ -1,7 +1,9 @@
 "use client";
 import { actionTest } from "@/action/server";
-import { ButtonLoading } from "@/components/Icons";
 import { Button, Input, Textarea } from "@nextui-org/react";
+
+import AddButton from "./AddButton";
+import DrawButton from "./DrawButton";
 
 const ChatInput = () => {
   return (
@@ -11,21 +13,12 @@ const ChatInput = () => {
     >
       <Textarea
         type="text"
-        // variant={"faded"}
         name="name"
         className="max-w-lg p-3"
         placeholder="답변을 입력해주세요"
       />
 
-      <Button
-        type="submit"
-        className=""
-        color="secondary"
-        isLoading
-        spinner={ButtonLoading}
-      >
-        확인
-      </Button>
+      <AddButton />
     </form>
   );
 };

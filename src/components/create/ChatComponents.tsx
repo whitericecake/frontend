@@ -1,6 +1,8 @@
 import ChatInput from "./ui/ChatInput";
 import IntroCard from "./ui/IntroCard";
 import ChatBox from "./ui/ChatBox";
+import DrawButton from "./ui/DrawButton";
+import Chatbot from "./ChatBot";
 
 export interface TestInterface {
   id: number;
@@ -19,11 +21,9 @@ const ChatComponents = async () => {
   }).then<TestInterface[]>((res) => res.json());
 
   return (
-    <section className="flex justify-between grow flex-col relative h-[calc(100vh-4rem)] bg-gray-50">
-      <IntroCard />
-      <ChatBox name={name} />
-      <ChatInput />
-    </section>
+    <>
+      <Chatbot name={name} />
+    </>
   );
 };
 export default ChatComponents;

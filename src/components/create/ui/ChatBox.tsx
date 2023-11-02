@@ -4,11 +4,10 @@ import { TestInterface } from "../ChatComponents";
 import DelButton from "./DelButton";
 
 const ChatBox = ({ name }: { name: TestInterface[] }) => {
-  const data = name;
   return (
-    <article className="relative overflow-scroll">
+    <article className="relative overflow-scroll bg-slate-400 grow">
       {name.map((e) => (
-        <div key={e.id} className="flex justify-between p-10 max-w-lg">
+        <div key={e.id} className="flex justify-between px-3 py-2 max-w-lg">
           <Card
             className="w-full border-none dark:bg-default-100/50 max-w-[610px]"
             shadow="none"

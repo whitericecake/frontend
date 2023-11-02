@@ -33,8 +33,6 @@ export const deleteTest = async ({ id }: { id: number }) => {
     next: { tags: ["del"] },
   });
 
-  console.log(deleteData);
-
   if (deleteData.status === 200 || deleteData.status === 201) {
     revalidateTag("chat");
   }

@@ -1,13 +1,12 @@
 "use server";
-import { TestInterface } from "@/components/create/ChatComponents";
 import { addTest, deleteTest } from "@/lib";
-import { revalidatePath, revalidateTag } from "next/cache";
 
 export const actionTest = async (e: FormData) => {
   const test = {
     title: "test",
     content: e.get("name") as string,
   };
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
   await addTest(test);
 };
 

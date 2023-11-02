@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
   size?: number;
 };
-export declare type CategoryType = "Portfolio" | "Intro" | "Project";
+export declare type CategoryType = "portfolio" | "resume" | "project";
 export declare type BlockType = "Block" | "Section";
 export declare type BlockTags =
   | "HeadingOne"
@@ -28,4 +28,10 @@ export interface BaseBlock {
 
 export interface ImageBlock extends BaseBlock {
   href?: string;
+}
+
+export interface CreateCardData {
+  title: string;
+  section: string;
+  formType: CategoryType;
 }
